@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/doctorboyz/Code/github.com/doctorboyz/nexus-oracle/shared/session-summary.sh nexus"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'INBOX=\"/Users/doctorboyz/Code/github.com/doctorboyz/nexus-oracle/ψ/inbox\"; COUNT=$(ls \"$INBOX\"/*.md 2>/dev/null | grep -L \"status: completed\" | wc -l | tr -d \" \"); if [ \"$COUNT\" -gt 0 ]; then echo \"📬 nexus: $COUNT unprocessed inbox message(s) pending — check ψ/inbox/\"; fi'"
+          }
+        ]
+      }
+    ]
+  }
+}

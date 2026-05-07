@@ -1,0 +1,6 @@
+.DS_Store
+logs/
+__pycache__/
+*.pyc
+ψ/credentials/
+ψ/.awaken-state.json
