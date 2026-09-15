@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash /Users/doctorboyz/Code/github.com/doctorboyz/nexus-oracle/shared/session-summary.sh nexus"
+            "command": "bash /Users/doctorboyz/Code/github.com/doctorboyz/nexus-oracle/scripts/session-summary.sh nexus"
           }
         ]
       }
